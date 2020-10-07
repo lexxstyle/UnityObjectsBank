@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8141020865496986211}
   - component: {fileID: 2506609768444669543}
   - component: {fileID: 7155658634223012157}
+  - component: {fileID: 318413642482614719}
   m_Layer: 0
   m_Name: Bank
   m_TagString: Untagged
@@ -101,3 +102,23 @@ MonoBehaviour:
   - {fileID: 2800000, guid: f83f8eb7da402d14f9187c11b58b16ec, type: 3}
   - {fileID: 2800000, guid: c760d20af3f150248b3364aa2281d698, type: 3}
   - {fileID: 2800000, guid: f3f3b4b8a65ec3b4ea238ceb2a3c1cf1, type: 3}
+--- !u!114 &318413642482614719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4570351084758329022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc2b194e25b398b4194eb9c1e652d98b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PathFolder: Data/testObjects
+  m_JsonFiles:
+  - {fileID: 4900000, guid: cf879e1469952214294e343cde0a7e82, type: 3}
+  - {fileID: 4900000, guid: da2402852434c2a45b4a46bfcbe8072f, type: 3}
+  - {fileID: 4900000, guid: b75c5eaffa96c5c45b9927817b4330bc, type: 3}
+  - {fileID: 4900000, guid: 71fc70f2303dae848921378d06935310, type: 3}
+  - {fileID: 4900000, guid: bebf137add579a348acbf75c0b5cb7b2, type: 3}
+  - {fileID: 4900000, guid: 2a06cc5100ca8d24eaa2ac5285e14e51, type: 3}

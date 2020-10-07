@@ -9,7 +9,8 @@ public enum UnityObjectType
     Prefab,
     Texture,
     Sprite,
-    Audio
+    Audio,
+    JSON
 }
 
 public class LinkBank : MonoBehaviour
@@ -35,6 +36,7 @@ public class LinkBank : MonoBehaviour
             if (this.GetType() == typeof(AudioClipsBank)) _objectType = UnityObjectType.Audio;
             if (this.GetType() == typeof(SpriteBank)) _objectType = UnityObjectType.Sprite;
             if (this.GetType() == typeof(TextureBank)) _objectType = UnityObjectType.Texture;
+            if (this.GetType() == typeof(JSONBank)) _objectType = UnityObjectType.JSON;
 
             return _objectType;
         }
@@ -52,6 +54,8 @@ public class LinkBank : MonoBehaviour
                 return "audioClip";
             case UnityObjectType.Texture:
                 return "texture2D";
+            case UnityObjectType.JSON:
+                return "textAsset";
             default:
                 return string.Empty;
         }
@@ -69,6 +73,8 @@ public class LinkBank : MonoBehaviour
                 return typeof(AudioClip);
             case UnityObjectType.Texture:
                 return typeof(Texture2D);
+            case UnityObjectType.JSON:
+                return typeof(TextAsset);
             default:
                 return null;
         }
